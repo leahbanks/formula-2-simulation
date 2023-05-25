@@ -1,0 +1,39 @@
+.title {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #15151E;
+    font-weight: 200;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.title span {
+    color: #0090D0;
+    padding-right: 10px; 
+}
+
+.title::after {
+    content: '';
+    width: 75%;
+    height: 2px;
+    background-color: #D0D0D2;
+    position: absolute;
+    margin-top: 0.8%;
+}
+
+.scroll-heading {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: left;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 14px;
+    letter-spacing: 3px;
+    color: #949498;
+    position: relative;
+    padding: 0 20px;
+    padding-top: 10px;
+    margin-left: 1.6%;
+}
+
+.arrow {
+    font-size: 11px;
+}
