@@ -1,6 +1,7 @@
 import "./Calendar.css";
 import { AiOutlineRight, AiOutlineLeft } from "react-icons/ai";
-import { races } from "../../../data/races";
+import { races } from "../../data/races";
+
 
 export default function Calendar() {
   return (

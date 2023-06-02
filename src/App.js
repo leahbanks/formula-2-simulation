@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header'
-import Calendar from './components/Header/Calendar/Calendar';
+import Calendar from './components/Calendar/Calendar';
 
 function App() {
   return (
