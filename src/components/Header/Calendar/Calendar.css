@@ -60,6 +60,7 @@
   scroll-snap-align: start;
   padding: 10px 4px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .races-container::-webkit-scrollbar {
