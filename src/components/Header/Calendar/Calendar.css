@@ -1,39 +1,102 @@
 .title {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #15151E;
-    font-weight: 200;
-    text-align: left;
-    margin-left: 3%;
+  font-family: "Bebas Neue", sans-serif;
+  color: #15151e;
+  font-weight: 200;
+  text-align: left;
+  margin-left: 3%;
 }
 
 .title span {
-    color: #0090D0;
-    padding-right: 10px; 
+  color: #0090d0;
+  padding-right: 10px;
 }
 
 .title::after {
-    content: '';
-    width: 75%;
-    height: 2px;
-    background-color: #D0D0D2;
-    position: absolute;
-    margin-top: 0.8%;
+  content: "";
+  width: 75%;
+  height: 2px;
+  background-color: #d0d0d2;
+  position: absolute;
+  margin-top: 0.8%;
 }
 
 .scroll-heading {
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: left;
-    font-weight: 100;
-    font-size: 15px;
-    line-height: 14px;
-    letter-spacing: 3px;
-    color: #949498;
-    position: relative;
-    padding: 0 20px;
-    padding-top: 10px;
-    margin-left: 1.6%;
+  font-family: "Bebas Neue", sans-serif;
+  text-align: left;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 14px;
+  letter-spacing: 3px;
+  color: #949498;
+  position: relative;
+  padding: 0 20px;
+  padding-top: 10px;
+  margin-left: 1.6%;
 }
 
 .arrow {
-    font-size: 11px;
+  font-size: 11px;
+}
+
+.flag {
+  width: 40px;
+  height: 26px;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.races-container {
+  overflow: auto;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  padding-top: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+  gap: 4rem;
+}
+
+.races {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  padding: 10px 4px;
+  box-sizing: border-box;
+}
+
+.races-container::-webkit-scrollbar {
+    height: 12px;
+    background-color: whitesmoke;   
+    border-radius: 20px;      
+  }
+
+.races-container::-webkit-scrollbar-thumb {
+    background-color: #0090D0;
+    border: 2px solid whitesmoke;;
+    border-radius: 20px; 
+}
+
+.race-name {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 1.125rem;
+    color: #004267;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    letter-spacing: 0px;
+
+}
+
+.dates {
+    font-family:'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: .8125rem;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    padding-top: 0px;
+    color: #15151E;
+}
+
+.races::after {
+    border-right: 3px solid #004267;
+    border-top: 3px solid #004267;
+    cursor: pointer;
 }
