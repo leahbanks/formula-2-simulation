@@ -1,0 +1,151 @@
+.race-page {
+  background-color: #004267;
+  overflow: hidden;
+}
+
+.race-info {
+  color: white;
+}
+
+.race-details {
+  display: grid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-left: 30vh;
+  margin-top: 6vw;
+  gap: 5vh;
+}
+
+.background-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.circuit-map {
+  width: 70vh;
+}
+
+.flag-race-page {
+  margin-top: 25px;
+  width: 4.5vh;
+  height: 3vh;
+  border: transparent;
+  border-radius: 5px;
+}
+
+.country {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 2.5vh;
+  overflow-y: hidden;
+  text-align: left;
+  text-shadow: #4c7f9c 0px 0px 10px;
+  padding-bottom: 0.2vh;
+}
+
+.city-and-round p {
+  margin: 0px;
+  line-height: 1.4;
+  text-align: left;
+  text-shadow: #4c7f9c 0px 0px 10px;
+}
+
+.city-name {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 3.5vh;
+  transform: scaleY(1.4);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200vh;
+}
+
+.round-date {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.circuit-stats {
+  display: grid;
+  justify-content: left;
+}
+
+.circuit-stats-background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.circuit-section h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+  font-size: 4vh;
+  font-weight: 100;
+  transform: scaleY(0.9);
+  text-align: left;
+  margin-left: 25vh;
+}
+
+.circuit-section h1::after {
+  content: "";
+  width: 80vh;
+  height: 1vh;
+  background-color: white;
+  position: absolute;
+  margin-top: 1.8vh;
+  margin-left: 1vh;
+  clip-path: polygon(0 0, 100% 0%, 99% 95%, 0% 95%);
+}
+
+.race-results {
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: #4c7f9c 0px 0px 10px;
+  text-align: left;
+}
+
+.race-results span {
+  background-color: #004267;
+  padding: 0.5vh;
+  display: flex;
+}
+
+.race-results li {
+  padding: 0.5vh;
+}
+
+.standings {
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: #4c7f9c 0px 0px 10px;
+  text-align: left;
+  margin-top: 0.2vh;
+}
+
+.standings-title {
+  font-size: 1.17em ;
+  font-weight: 100;
+  margin-left: 4vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.standings span {
+  background-color: #0090D0;
+    padding: 0.5vh;
+}
+
+.standings li {
+  padding: 0.5vh;
+}
