@@ -52,15 +52,26 @@
   padding-top: 2%;
   margin-right: 2%;
   margin-left: 2%;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .races {
   flex-shrink: 0;
   scroll-snap-align: start;
-  padding: 10px 4px;
+  padding-bottom: 0px;
+  padding-top: 1vh;
+  padding-right: 1.5vh;
+  padding-left: 1.5vh;
   box-sizing: border-box;
   text-decoration: none;
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.races:hover {
+  border-right: 2px solid #004267;
+  border-top: 2px solid #004267;
+  cursor: pointer;
 }
 
 .races-container::-webkit-scrollbar {
@@ -94,10 +105,4 @@
     letter-spacing: 0.5px;
     padding-top: 0px;
     color: #15151E;
-}
-
-.races::after {
-    border-right: 3px solid #004267;
-    border-top: 3px solid #004267;
-    cursor: pointer;
 }
