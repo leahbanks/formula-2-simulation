@@ -32,6 +32,7 @@
   padding: 0 20px;
   padding-top: 10px;
   margin-left: 1.6%;
+  overflow-y: hidden;
 }
 
 .arrow {
@@ -106,3 +107,14 @@
     padding-top: 0px;
     color: #15151E;
 }
+
+@media screen and (max-width: 750px) {
+
+  .title::after {
+    content: "";
+    width: 0%;
+  }
+
+
+}
+

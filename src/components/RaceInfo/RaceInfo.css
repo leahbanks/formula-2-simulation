@@ -164,3 +164,112 @@
   margin-left: 1vh;
   clip-path: polygon(0 0, 100% 0%, 99% 95%, 0% 90%);
 }
+
+@media screen and (max-width: 750px) {
+
+  .race-info {
+    overflow: hidden;
+  }
+
+  .race-details {
+    grid-template-columns: 1fr;
+    margin-left: 0vh;
+    gap: 0vh;
+    margin-top: 10px;
+    overflow-y: hidden;
+  }
+
+  .flag-race-page {
+    margin-top: 0px;
+    width: 10vw;
+    height: 6vw;
+  }
+
+  .country {
+    font-size: 4.5vw;
+    margin-left: 2.5vw;
+  }
+
+  .city-name {
+    font-size: 7vw;
+  }
+
+  .round-date {
+    font-size: 4vw;
+  }
+
+  .race-results {
+    margin-top: 0vw;
+    overflow-y: hidden;
+  }
+
+  .race-results span {
+    padding-left: 4vw;
+    font-size: 3vw;
+  }
+
+  .race-results li {
+    font-size: 3vw;
+  }
+
+  .standings {
+    margin-top: 0vw;
+  }
+
+  .standings-title {
+    font-size: 3vw;
+    margin-left: 2.5vw;
+  }
+
+  .grid {
+    grid-template-columns: 30% 40%;
+    gap: 0.2rem;
+    padding-left: 2vw;
+    padding-bottom: 0vw;
+    padding-top: 0vw;
+  }
+
+  .grid-2 {
+    grid-template-columns: 30% 40%;
+    gap: 0.2rem;
+    padding-left: 2vw;
+    padding-bottom: 0vw;
+    padding-top: 0vw;
+  }
+
+  .standings span {
+    padding: 0.5vw;
+    padding-left: 4vw;
+    font-size: 3vw;
+  }
+
+  .standings li {
+    padding: 0.5vw;
+    font-size: 3vw;
+  }
+
+  /* circuit section */
+
+.circuit-details {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.circuit-section h1 {
+  color: white;
+  font-size: 4vw;
+  font-weight: 100;
+  transform: scaleY(0.9);
+  text-align: left;
+  margin-left: 2vw;
+}
+.circuit-map {
+  width: 100vw;
+}
+
+.circuit-stats {
+  margin-left: 2vh;
+}
+
+
+}
