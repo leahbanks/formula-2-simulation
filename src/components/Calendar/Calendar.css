@@ -59,13 +59,13 @@
   flex-shrink: 0;
   scroll-snap-align: start;
   padding-bottom: 0px;
-  padding-top: 1vh;
+  padding-top: 1.5vh;
   padding-right: 1.5vh;
-  padding-left: 1.5vh;
   box-sizing: border-box;
   text-decoration: none;
   border-right: 2px solid white;
   border-top: 2px solid white;
+  border-top-right-radius: 10px;
 }
 
 .races:hover {
