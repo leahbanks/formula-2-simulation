@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* overflow-x: hidden; */
 }
 
 .App-logo {
@@ -30,4 +31,10 @@
 
 * {
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 750px) {
+  .App {
+     overflow: hidden; 
+  }
 }
