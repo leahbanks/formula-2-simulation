@@ -2,8 +2,8 @@ export const races = [
   {
     id: 1,
     name: "SAKHIR",
-    country: "Bahrain",
-    date: "03 - 05 Mar",
+    country: "BAHRAIN",
+    date: "03 - 05 MAR",
     img: "assets/flags/bahrain.png",
     circuit: "Bahrain International Circuit",
     circuitImg: "assets/circuit-imgs/Sakhir.png",
