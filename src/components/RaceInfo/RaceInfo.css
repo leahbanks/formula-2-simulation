@@ -17,6 +17,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 10vh;
 }
 
 .flag-race-page {
@@ -46,11 +47,12 @@
 .city-name {
   font-family: sans-serif;
   font-weight: lighter;
-  font-size: 6vh;
+  font-size: 5vh;
   transform: scaleY(1.4);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 500px;
 }
 
 .round-date {
@@ -61,7 +63,7 @@
 .race-results {
   text-shadow: #4c7f9c 0px 0px 10px;
   text-align: left;
-  margin-top: 8vh;
+  margin-top: 0vh;
 }
 
 .race-results span {
@@ -70,22 +72,26 @@
   display: flex;
   clip-path: polygon(95% 0, 95% 99%, 0% 100%, 10% 0%);
   padding-left: 5vh;
+  font-size: 2vh;
 }
 
 .race-results li {
+  margin-left: 0vh;
+  font-size: 2.2vh;
   padding: 0.5vh;
+  padding-left: 0vh;
 }
 
 .standings {
   text-shadow: #4c7f9c 0px 0px 10px;
   text-align: left;
-  margin-top: 8vh;
+  margin-top: 0vh;
 }
 
 .standings-title {
-  font-size: 1.17em;
+  font-size: 3vh;
   font-weight: 100;
-  margin-left: 6vh;
+  margin-left: 4vh;
 }
 
 .grid {
@@ -105,10 +111,14 @@
   padding: 0.5vh;
   padding-left: 5vh;
   clip-path: polygon(95% 0, 95% 99%, 0% 100%, 10% 0%);
+  font-size: 2vh;
 }
 
 .standings li {
+  margin-left: 0vh;
+  font-size: 2.2vh;
   padding: 0.5vh;
+  padding-left: 0vh;
 }
 
 /* circuit section */
@@ -116,10 +126,12 @@
 .circuit-details {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+  padding-left: 10vh;
 }
 
 .circuit-map {
-  width: 60vw;
+  width: 50vw;
 }
 
 .circuit-stats {
@@ -147,21 +159,21 @@
 
 .circuit-section h1 {
   color: white;
-  font-size: 4vh;
+  font-size: 6vh;
   font-weight: 100;
   transform: scaleY(0.9);
   text-align: left;
-  margin-left: 25vh;
+  margin-left: 10vh;
 }
 
 .circuit-section h1::after {
   content: "";
-  width: 80vh;
-  height: 1vh;
+  width: 100vh;
+  height: 1.5vh;
   background-color: white;
   position: absolute;
-  margin-top: 1.8vh;
-  margin-left: 1vh;
+  margin-top: 2.5vh;
+  margin-left: 2vh;
   clip-path: polygon(0 0, 100% 0%, 99% 95%, 0% 90%);
 }
 
@@ -177,6 +189,10 @@
     gap: 0vh;
     margin-top: 10px;
     overflow-y: hidden;
+  }
+
+  .background-img {
+    padding: 0vh;
   }
 
   .flag-race-page {
@@ -253,6 +269,7 @@
 .circuit-details {
   display: grid;
   grid-template-columns: 1fr;
+  padding-left: 0vh;
 }
 
 .circuit-section h1 {
@@ -261,14 +278,14 @@
   font-weight: 100;
   transform: scaleY(0.9);
   text-align: left;
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
 .circuit-map {
   width: 100vw;
 }
 
 .circuit-stats {
-  margin-left: 2vh;
+  justify-items: center;
 }
 
 
