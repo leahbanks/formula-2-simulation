@@ -1,0 +1,106 @@
+.results-page {
+  background-color: white;
+  color: #15151e;
+  overflow-y: scroll;
+}
+
+.scoreboard-title {
+  font-family: "Bebas Neue", sans-serif;
+  color: #15151e;
+  text-align: left;
+  font-size: 6vh;
+  font-weight: 100;
+  transform: scaleY(0.9);
+  text-align: left;
+  margin-left: 10vh;
+}
+
+.scoreboard-title span {
+  color: #0090d0;
+  padding-right: 10px;
+}
+
+.scoreboard-title::after {
+  content: "";
+  width: 100vh;
+  height: 1.5vh;
+  background-color: #0090d0;
+  position: absolute;
+  margin-top: 2.5vh;
+  margin-left: 1vh;
+  clip-path: polygon(0 0, 100% 0%, 99% 95%, 0% 90%);
+}
+
+.scoreboard-wrapper {
+  background-color: #f1f1f1;
+}
+
+.scoreboard {
+  background-color: white;
+  margin: 6vh;
+}
+
+.scoreboard h2 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #15151e;
+  text-align: left;
+  font-size: 5vh;
+  font-weight: 100;
+  transform: scaleY(0.9);
+  text-align: left;
+  margin-left: 8vh;
+}
+
+.scoreboard h2 span {
+  color: #0090d0;
+  padding-right: 10px;
+}
+  
+
+.driver-results {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 5vh;
+  }
+  
+  .driver-results td, .driver-results th {
+    padding: 8px;
+    text-align: left;
+  }
+
+  .driver-results p {
+    text-align: left;
+  }
+  
+ .driver-results tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .driver-results tr:hover {background-color: #dedddd;}
+
+  .headings:hover {
+    background-color: transparent;
+  }
+  
+  .driver-results th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#0090d0;
+    color: white;
+  }
+
+  .driver-results h3 {
+    /* clip-path: polygon(95% 0, 95% 99%, 0% 100%, 40% 0%); */
+    /* background-color: #004267; */
+    /* color: white;
+    padding-top: 12px;
+    padding-bottom: 12px; */
+  }
+
+  /* .driver-results p { */
+    /* background-color: #004267; */
+    /* color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  } */
+
+
