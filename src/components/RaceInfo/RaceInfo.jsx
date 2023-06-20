@@ -1,6 +1,7 @@
 import { races } from "../../data/races";
 import { useParams } from "react-router-dom";
 import "./RaceInfo.css";
+import { Scoreboard } from "../Scoreboard/Scoreboard";
 
 export const RaceInfo = () => {
   const { race_id } = useParams();
@@ -14,8 +15,6 @@ export const RaceInfo = () => {
         <div
           className="background-img"
           style={{
-            height: "400px",
-            width: "100%",
             backgroundImage: `url(${currentRace.circuitImg})`,
           }}
         >
@@ -111,27 +110,38 @@ export const RaceInfo = () => {
               <h4>
                 Circuit Length <p>{currentRace.circuitLength}</p>
               </h4>
+              {currentRace.sprintRace !== undefined ? (
+                <h4>
+                  Sprint Race <p>{currentRace.sprintRace[0]}</p>
+                  <p>{currentRace.sprintRace[1]}</p>
+                </h4>
+              ) : null}
+
+              {currentRace.featureRace !== undefined ? (
+                <h4>
+                  Feature Race <p>{currentRace.featureRace[0]}</p>{" "}
+                  <p>{currentRace.featureRace[1]}</p>{" "}
+                </h4>
+              ) : null}
+
               <h4>
-                Sprint Race <p>{currentRace.sprintRace[0]}</p>
-                <p>{currentRace.sprintRace[1]}</p>
-              </h4>
-              <h4>
-                Feature Race <p>{currentRace.featureRace[0]}</p>{" "}
-                <p>{currentRace.featureRace[1]}</p>
-              </h4>
-              <h3>
-                Circuit Records <h4>F2 Fastest Lap</h4>{" "}
+                Circuit Records <p>F2 Fastest Lap</p>{" "}
                 <p>{currentRace.circuitRecords[0].f2FastestLap[0]}</p>{" "}
-                <p>
-                  {currentRace.circuitRecords[0].f2FastestLap[1]} •{" "}
-                  {currentRace.circuitRecords[0].driver}
-                </p>
+                {!currentRace.circuitRecords[0].f2FastestLap[1] ? (
+                  <p>{currentRace.circuitRecords[0].driver} </p>
+                ) : (
+                  <p>
+                    {currentRace.circuitRecords[0].f2FastestLap[1]} •{" "}
+                    {currentRace.circuitRecords[0].driver}{" "}
+                  </p>
+                )}
                 <p>{currentRace.circuitRecords[0].date}</p>
-              </h3>
+              </h4>
             </div>
           </div>
         </div>
       </section>
+      <Scoreboard />
     </section>
   );
 };
