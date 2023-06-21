@@ -104,39 +104,60 @@ export const RaceInfo = () => {
               alt={`map of ${currentRace.circuit}`}
             />
             <div className="circuit-stats">
-              <h4>
-                First F2 Race <p>{currentRace.firstRace}</p>
-              </h4>
-              <h4>
-                Circuit Length <p>{currentRace.circuitLength}</p>
-              </h4>
+              <div>
+                <h4>First F2 Race</h4>
+                <p className="value skew-border">
+                  <span>{currentRace.firstRace}</span>
+                </p>
+              </div>
+
+              <div>
+                <h4>Circuit Length</h4>
+                <p className="value skew-border">
+                  <span>{currentRace.circuitLength}</span>
+                </p>
+              </div>
+
               {currentRace.sprintRace !== undefined ? (
-                <h4>
-                  Sprint Race <p>{currentRace.sprintRace[0]}</p>
-                  <p>{currentRace.sprintRace[1]}</p>
-                </h4>
+                <div>
+                  <h4>Sprint Race</h4>
+                  <p className="value-no-skew">{currentRace.sprintRace[0]}</p>
+                  <p className="value-light skew-border">
+                    <span>{currentRace.sprintRace[1]}</span>
+                  </p>
+                </div>
               ) : null}
 
               {currentRace.featureRace !== undefined ? (
-                <h4>
-                  Feature Race <p>{currentRace.featureRace[0]}</p>{" "}
-                  <p>{currentRace.featureRace[1]}</p>{" "}
-                </h4>
+                <div>
+                  <h4>Feature Race</h4>
+                  <p className="value-no-skew">{currentRace.featureRace[0]}</p>
+                  <p className="value-light skew-border">
+                    <span>{currentRace.featureRace[1]}</span>
+                  </p>
+                </div>
               ) : null}
 
-              <h4>
-                Circuit Records <p>F2 Fastest Lap</p>{" "}
-                <p>{currentRace.circuitRecords[0].f2FastestLap[0]}</p>{" "}
+              <div>
+                <p className="circuit-records-heading">Circuit Records</p>
+                <h4>F2 Fastest Lap</h4>
+                <p className="value-no-skew">
+                  {currentRace.circuitRecords[0].f2FastestLap[0]}
+                </p>
                 {!currentRace.circuitRecords[0].f2FastestLap[1] ? (
-                  <p>{currentRace.circuitRecords[0].driver} </p>
+                  <span className="na">N/A</span>
                 ) : (
-                  <p>
-                    {currentRace.circuitRecords[0].f2FastestLap[1]} •{" "}
-                    {currentRace.circuitRecords[0].driver}{" "}
+                  <p className="circuit-records-p">
+                    <span>
+                      {currentRace.circuitRecords[0].f2FastestLap[1]} •{" "}
+                      {currentRace.circuitRecords[0].driver}
+                    </span>
+                    <p className="record-date skew-border">
+                      <span>{currentRace.circuitRecords[0].date}</span>
+                    </p>
                   </p>
                 )}
-                <p>{currentRace.circuitRecords[0].date}</p>
-              </h4>
+              </div>
             </div>
           </div>
         </div>
