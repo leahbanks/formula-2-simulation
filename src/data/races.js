@@ -88,7 +88,7 @@ export const races = [
     circuitRecords: [
       {
         f2FastestLap: ["New Venue"],
-        driver: "N/A",
+        driver: "",
         date: "",
       },
     ],
@@ -152,7 +152,7 @@ export const races = [
     circuitRecords: [
       {
         f2FastestLap: ["New Venue"],
-        driver: "N/A",
+        driver: "",
         date: "",
       },
     ],
@@ -213,7 +213,7 @@ export const races = [
     featureRace: ["37 laps", "172.309 km"],
     circuitRecords: [
       {
-        f2FastestLap: ["N/A"],
+        f2FastestLap: [""],
       },
     ],
   },
@@ -391,15 +391,13 @@ export const races = [
       { third: ["Z. Maloney", 15] },
     ],
     circuitMap: "assets/circuit-maps/Monza-circuit.png",
-    firstRace: "",
-    circuitLength: "",
-    sprintRace: [],
-    featureRace: [],
+    firstRace: "2017",
+    circuitLength: "5.793 km",
     circuitRecords: [
       {
-        f2FastestLap: [],
-        driver: "",
-        date: "",
+        f2FastestLap: ["1:30.982", "229.218 km/h"],
+        driver: "Nobuharu Matsushita",
+        date: "(Art Grand Prix) in 2017",
       },
     ],
   },
